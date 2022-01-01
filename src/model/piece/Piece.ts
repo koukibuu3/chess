@@ -1,7 +1,7 @@
 import { Color, File, Rank } from '../../types'
 import { Position } from '../Position'
 
-export default class Piece {
+export default abstract class Piece {
   protected position: Position
 
   constructor(private readonly color: Color, file: File, rank: Rank) {
