@@ -7,4 +7,11 @@ export class Position {
     private file: File,
     private rank: Rank,
   ) {}
+
+  distanceFrom(position: Position) {
+    return {
+      file: Math.abs(position.file.charCodeAt(0) - this.file.charCodeAt(0)),
+      rank: Math.abs(position.rank - this.rank),
+    }
+  }
 }
