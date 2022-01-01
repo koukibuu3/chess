@@ -8,4 +8,10 @@ export default abstract class Piece {
     // 宣言時に position を初期化していないためコンストラクタ内で値の割り当てが必要
     this.position = new Position(file, rank)
   }
+
+  moveTo(position: Position) {
+    this.position = position
+  }
+
+  abstract canMoveTo(position: Position): boolean
 }
