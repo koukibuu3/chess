@@ -52,6 +52,13 @@ module.exports = {
         extensions: ['.jsx', '.tsx'],
       },
     ],
+    'react/function-component-definition': [
+      2,
+      {
+        namedComponents: 'arrow-function',
+      },
+    ],
+    'import/prefer-default-export': 'off',
   },
   overrides: [
     {
