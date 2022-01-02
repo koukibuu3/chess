@@ -1,6 +1,6 @@
 import { Position } from '../Position'
 
-import Piece from './Piece'
+import { Piece } from './Piece'
 
 export class Knight extends Piece {
   canMoveTo(position: Position) {
